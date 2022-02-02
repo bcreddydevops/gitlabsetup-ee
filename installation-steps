@@ -1,0 +1,22 @@
+u# vi /etc/hosts
+
+IP  GitLab.bcreddydevops.local      Gitlab
+
+# apt-get update && apt upgrade -y
+
+
+# apt-get install -y curl openssh-server ca-certificates tzdata perl postfix
+# curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+# apt-get install gitlab-ee
+# gitlab-ctl reconfigure
+# gitlab-ctl status
+# gitlab-ctl start
+# gitlab-rails console -e production
+
+===
+user = User.where(id: 1).first
+user.password = 'password'
+user.password_confirmation = 'password'
+user.save!
+
+then take the public ip
